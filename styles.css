@@ -60,7 +60,7 @@ h1, h2 { font-family: var(--font-display); }
 .hero h1 { max-width: 780px; margin-bottom: 24px; font-size: clamp(46px, 6vw, 82px); font-weight: 600; letter-spacing: -.06em; line-height: 1.04; }
 .hero h1 span, h2 span { color: var(--blue-bright); }
 .hero-lead { max-width: 515px; margin-bottom: 34px; color: rgba(233,245,252,.8); font-size: 17px; line-height: 1.75; }
-.emergency-callout { position: relative; width: fit-content; max-width: 100%; display: flex; align-items: center; gap: 14px; margin: -12px 0 26px; padding: 12px 15px; border: 1px solid rgba(255,195,92,.7); border-left: 4px solid #ffc35c; border-radius: 4px; background: rgba(4,19,36,.76); color: #fff; }
+.emergency-callout { position: relative; width: fit-content; max-width: 100%; display: flex; align-items: center; gap: 14px; margin: -12px 0 36px; padding: 12px 15px; border: 1px solid rgba(255,195,92,.7); border-left: 4px solid #ffc35c; border-radius: 4px; background: rgba(4,19,36,.76); color: #fff; }
 .emergency-label { color: #ffd17e; font-size: 13px; font-weight: 800; }
 .emergency-note { color: #e4edf4; font-size: 11px; line-height: 1.45; }
 .emergency-arrow { margin-left: auto; color: #ffd17e; font-size: 16px; }
@@ -229,7 +229,7 @@ h1, h2 { font-family: var(--font-display); }
   .eyebrow { font-size: 9px; letter-spacing: .1em; }
   .hero h1 { font-size: clamp(43px, 11vw, 65px); }
   .hero-lead { max-width: 420px; font-size: 14px; }
-  .emergency-callout { width: 100%; align-items: flex-start; flex-wrap: wrap; gap: 5px 10px; margin: -10px 0 23px; }
+  .emergency-callout { width: 100%; align-items: flex-start; flex-wrap: wrap; gap: 5px 10px; margin: -10px 0 33px; }
   .emergency-label { font-size: 12px; }
   .emergency-note { flex-basis: calc(100% - 4px); font-size: 10px; }
   .emergency-arrow { position: absolute; right: 31px; margin-top: -1px; }
