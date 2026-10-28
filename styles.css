@@ -63,8 +63,8 @@ h1, h2 { font-family: var(--font-display); }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 13px; }
 .button { min-height: 50px; display: inline-flex; align-items: center; justify-content: center; gap: 16px; padding: 0 20px; border: 1px solid transparent; border-radius: 4px; font-size: 12px; font-weight: 700; transition: transform .2s ease, background .2s ease, border-color .2s ease; }
 .button:hover { transform: translateY(-2px); }
-.button-primary { background: var(--blue); color: white; box-shadow: 0 8px 28px rgba(22,139,224,.18); }
-.button-primary:hover { background: #0878cb; }
+.button-primary { background: #0b70b8; color: white; box-shadow: 0 8px 28px rgba(22,139,224,.18); }
+.button-primary:hover { background: #075f99; }
 .button-quiet { border-color: rgba(255,255,255,.28); color: var(--white); }
 .button-quiet span { color: #b5c9d8; font-weight: 500; }
 .phone-icon { width: 18px; height: 18px; flex: 0 0 18px; color: var(--blue-bright); }
@@ -74,7 +74,7 @@ h1, h2 { font-family: var(--font-display); }
 
 .intro { background: #f2f7fb; color: var(--navy); }
 .intro-grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(290px, .95fr); gap: 44px; align-items: start; }
-.section-label { display: flex; align-items: center; gap: 10px; color: #73899a; font-size: 9px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; white-space: nowrap; }
+.section-label { display: flex; align-items: center; gap: 10px; color: #5d7181; font-size: 9px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; white-space: nowrap; }
 .section-label > span:first-child { color: var(--blue); }
 .label-rule { width: 26px; height: 1px; background: #8ba1b1; }
 .eyebrow-blue { margin-bottom: 17px; color: #1675b8; }
@@ -86,9 +86,9 @@ h1, h2 { font-family: var(--font-display); }
 .service-list { padding-top: 28px; }
 .service-item { position: relative; padding: 21px 42px 24px 0; border-top: 1px solid #cad7e1; }
 .service-item:last-child { border-bottom: 1px solid #cad7e1; }
-.service-number { color: #6e8292; font-size: 9px; font-weight: 700; letter-spacing: .14em; }
+.service-number { color: #586e7f; font-size: 9px; font-weight: 700; letter-spacing: .14em; }
 .service-item h3 { margin: 12px 0 8px; color: var(--navy); font: 700 18px/1.3 var(--font-display); letter-spacing: -.035em; }
-.service-item p { max-width: 330px; margin-bottom: 0; color: #617687; font-size: 12px; line-height: 1.65; }
+.service-item p { max-width: 330px; margin-bottom: 0; color: #596f80; font-size: 12px; line-height: 1.65; }
 .service-mark { position: absolute; right: 2px; top: 37px; color: #8ca8bb; font-size: 28px; }
 .service-mark-commercial { font-size: 25px; }
 
@@ -114,7 +114,7 @@ h1, h2 { font-family: var(--font-display); }
 .brands-wrap { display: grid; grid-template-columns: 1fr; gap: 0; }
 .brands-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding-bottom: 24px; border-bottom: 1px solid #cad7e1; }
 .brands-heading h2 { margin: 0; font: 700 22px/1.3 var(--font-display); letter-spacing: -.04em; }
-.brands-heading p { margin: 0; color: #667f90; font-size: 11px; }
+.brands-heading p { margin: 0; color: #5a7180; font-size: 11px; }
 .brand-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; gap: 12px; margin: 0; padding: 25px 0 0; list-style: none; }
 .brand-item { min-width: 0; min-height: 92px; display: flex; align-items: center; justify-content: center; padding: 14px; border: 1px solid #d7e3eb; border-radius: 5px; background: #fff; }
 .brand-item picture { display: block; width: min(170px, 100%); height: 54px; }
