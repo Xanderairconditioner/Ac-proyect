@@ -60,6 +60,10 @@ h1, h2 { font-family: var(--font-display); }
 .hero h1 { max-width: 780px; margin-bottom: 24px; font-size: clamp(46px, 6vw, 82px); font-weight: 600; letter-spacing: -.06em; line-height: 1.04; }
 .hero h1 span, h2 span { color: var(--blue-bright); }
 .hero-lead { max-width: 515px; margin-bottom: 34px; color: rgba(233,245,252,.8); font-size: 17px; line-height: 1.75; }
+.emergency-callout { position: relative; width: fit-content; max-width: 100%; display: flex; align-items: center; gap: 14px; margin: -12px 0 26px; padding: 12px 15px; border: 1px solid rgba(255,195,92,.7); border-left: 4px solid #ffc35c; border-radius: 4px; background: rgba(4,19,36,.76); color: #fff; }
+.emergency-label { color: #ffd17e; font-size: 13px; font-weight: 800; }
+.emergency-note { color: #e4edf4; font-size: 11px; line-height: 1.45; }
+.emergency-arrow { margin-left: auto; color: #ffd17e; font-size: 16px; }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 13px; }
 .button { min-height: 50px; display: inline-flex; align-items: center; justify-content: center; gap: 16px; padding: 0 20px; border: 1px solid transparent; border-radius: 4px; font-size: 12px; font-weight: 700; transition: transform .2s ease, background .2s ease, border-color .2s ease; }
 .button:hover { transform: translateY(-2px); }
@@ -83,6 +87,9 @@ h1, h2 { font-family: var(--font-display); }
 .body-copy { max-width: 465px; margin-bottom: 25px; color: #52697b; font-size: 14px; line-height: 1.85; }
 .text-link { display: inline-flex; gap: 13px; align-items: center; padding-bottom: 7px; border-bottom: 1px solid rgba(22,139,224,.45); color: #075b98; font-size: 12px; font-weight: 700; }
 .text-link span { color: #0b70b8; }
+.financing-callout { max-width: 360px; display: flex; align-items: center; gap: 13px; margin: 0 0 22px; padding: 14px 16px; border: 1px solid #cbd9e3; border-radius: 4px; background: #fff; color: #435b6c; font-size: 12px; line-height: 1.6; }
+.financing-callout strong { color: #061a31; font-size: 14px; }
+.financing-mark { width: 34px; height: 34px; display: grid; flex: 0 0 34px; place-items: center; border-radius: 50%; background: #eaf2fb; color: #264a79; font-size: 17px; font-weight: 800; }
 .service-list { padding-top: 28px; }
 .service-item { position: relative; padding: 21px 42px 24px 0; border-top: 1px solid #cad7e1; }
 .service-item:last-child { border-bottom: 1px solid #cad7e1; }
@@ -179,6 +186,9 @@ h1, h2 { font-family: var(--font-display); }
 .footer-credit { display: inline-flex; align-items: center; gap: 8px; }
 .footer-credit-link { display: inline-flex; align-items: center; border-radius: 3px; }
 .footer-credit-link img { display: block; width: 132px; height: auto; }
+.floating-whatsapp { position: fixed; z-index: 30; right: max(22px, env(safe-area-inset-right)); bottom: max(22px, env(safe-area-inset-bottom)); min-height: 54px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 0 19px; border: 2px solid #fff; border-radius: 999px; background: #075e54; box-shadow: 0 5px 24px rgba(0,0,0,.3); color: #fff; font-size: 13px; font-weight: 750; }
+.floating-whatsapp:hover { background: #064c45; transform: translateY(-2px); }
+.floating-whatsapp img { width: 24px; height: 24px; }
 
 :focus-visible { outline: 2px solid #7acaff; outline-offset: 4px; }
 
@@ -219,6 +229,10 @@ h1, h2 { font-family: var(--font-display); }
   .eyebrow { font-size: 9px; letter-spacing: .1em; }
   .hero h1 { font-size: clamp(43px, 11vw, 65px); }
   .hero-lead { max-width: 420px; font-size: 14px; }
+  .emergency-callout { width: 100%; align-items: flex-start; flex-wrap: wrap; gap: 5px 10px; margin: -10px 0 23px; }
+  .emergency-label { font-size: 12px; }
+  .emergency-note { flex-basis: calc(100% - 4px); font-size: 10px; }
+  .emergency-arrow { position: absolute; right: 31px; margin-top: -1px; }
   .hero-actions { align-items: stretch; flex-direction: column; }
   .hero-actions .button { width: 100%; }
   .hero-note { margin-top: 35px; }
@@ -243,6 +257,7 @@ h1, h2 { font-family: var(--font-display); }
   .faq-list { grid-template-columns: 1fr; }
   .section-label-light { margin-bottom: 28px; }
   .contact-card { padding: 24px; }
+  .floating-whatsapp { right: max(15px, env(safe-area-inset-right)); bottom: max(15px, env(safe-area-inset-bottom)); min-height: 50px; gap: 8px; padding-inline: 15px; font-size: 12px; }
   .footer-main { align-items: flex-start; flex-wrap: wrap; }
   .footer-main > p { order: 3; width: 100%; }
   .footer-socials { order: 4; }
