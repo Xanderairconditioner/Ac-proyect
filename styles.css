@@ -37,7 +37,7 @@ button { font: inherit; }
 .site-header { position: absolute; z-index: 10; inset: 0 0 auto; height: 112px; border-bottom: 1px solid rgba(255,255,255,.12); }
 .nav-wrap { height: 100%; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; gap: 11px; min-width: 0; }
-.brand-mark { width: 140px; height: 110px; flex: 0 0 140px; object-fit: cover; object-position: center; }
+.brand-mark { width: 160px; height: 112px; flex: 0 0 160px; object-fit: cover; object-position: center; }
 .site-nav { display: flex; align-items: center; gap: 38px; color: rgba(247,251,255,.84); font-size: 13px; font-weight: 600; }
 .site-nav > a:not(.nav-cta) { transition: color .2s ease; }
 .site-nav > a:not(.nav-cta):hover { color: var(--blue-bright); }
@@ -142,7 +142,7 @@ h1, h2 { font-family: var(--font-display); }
 .site-footer { padding: 30px 0 0; background: #041324; }
 .footer-main { display: flex; align-items: center; justify-content: space-between; gap: 25px; padding-bottom: 26px; }
 .brand-footer { min-width: auto; }
-.brand-footer .brand-mark { width: 120px; height: 94px; flex-basis: 120px; }
+.brand-footer .brand-mark { width: 130px; height: 102px; flex-basis: 130px; }
 .footer-main > p { margin: 0; color: #8297a8; font-size: 10px; line-height: 1.6; }
 .footer-phone { color: #e7f4fb; font-size: 12px; font-weight: 700; }
 .footer-phone span { margin-left: 8px; color: var(--blue-bright); }
@@ -167,8 +167,8 @@ h1, h2 { font-family: var(--font-display); }
   .section-pad { padding: 78px 0; }
   .site-header { height: 98px; }
   .brand { gap: 8px; min-width: 0; }
-  .brand-mark { width: 120px; height: 94px; flex-basis: 120px; }
-  .brand-footer .brand-mark { width: 110px; height: 86px; flex-basis: 110px; }
+  .brand-mark { width: 140px; height: 98px; flex-basis: 140px; }
+  .brand-footer .brand-mark { width: 120px; height: 94px; flex-basis: 120px; }
   .menu-toggle { width: 42px; height: 42px; display: grid; place-items: center; padding: 0; border: 1px solid rgba(255,255,255,.26); border-radius: 4px; background: transparent; color: white; }
   .menu-icon, .menu-icon::before, .menu-icon::after { width: 17px; height: 1px; display: block; background: currentColor; transition: transform .2s ease; }
   .menu-icon { position: relative; }
