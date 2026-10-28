@@ -118,11 +118,13 @@ h1, h2 { font-family: var(--font-display); }
 .brands-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding-bottom: 24px; border-bottom: 1px solid #cad7e1; }
 .brands-heading h2 { margin: 0; font: 700 22px/1.3 var(--font-display); letter-spacing: -.04em; }
 .brands-heading p { margin: 0; color: #667f90; font-size: 11px; }
-.brand-list { display: grid; grid-template-columns: repeat(6, 1fr); align-items: center; gap: 10px; margin: 0; padding: 25px 0 0; list-style: none; }
-.brand-list li { color: #526a7d; font: 800 13px/1 var(--font-display); letter-spacing: .05em; text-align: center; }
-.brand-list li:nth-child(2) { font-weight: 600; letter-spacing: -.03em; }
-.brand-list li:nth-child(4) { font-size: 12px; letter-spacing: .12em; }
-.brand-list li:nth-child(5) { font-size: 14px; }
+.brand-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; gap: 12px; margin: 0; padding: 25px 0 0; list-style: none; }
+.brand-item { min-width: 0; min-height: 76px; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 14px; border: 1px solid #d7e3eb; border-radius: 5px; background: #fff; }
+.brand-logo { width: 74px; height: 38px; flex: 0 0 74px; display: grid; place-items: center; }
+.brand-logo img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.brand-name { color: #526a7d; font: 800 14px/1.1 var(--font-display); letter-spacing: .015em; }
+.brand-item-airmax { border-color: #183b59; background: #0d2945; }
+.brand-item-airmax .brand-name { color: #f4f9fd; }
 
 .contact { position: relative; overflow: hidden; background: linear-gradient(110deg, #092443, #061a31 70%); }
 .contact-glow { position: absolute; width: 560px; height: 560px; right: -80px; top: -280px; border-radius: 50%; background: radial-gradient(circle, rgba(22,139,224,.2), transparent 68%); }
@@ -149,11 +151,11 @@ h1, h2 { font-family: var(--font-display); }
 .footer-main > p { margin: 0; color: #8297a8; font-size: 10px; line-height: 1.6; }
 .footer-phone { color: #e7f4fb; font-size: 12px; font-weight: 700; }
 .footer-phone span { margin-left: 8px; color: var(--blue-bright); }
-.footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding: 15px 0 18px; border-top: 1px solid rgba(220,238,251,.1); color: #718698; font-size: 9px; }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; gap: 16px 20px; padding: 15px 0 18px; border-top: 1px solid rgba(220,238,251,.1); color: #8298a9; font-size: 10px; }
 .footer-bottom a { color: #9fb3c2; }
-.footer-credit { display: inline-flex; align-items: center; gap: 8px; }
+.footer-credit { display: inline-flex; align-items: center; gap: 12px; color: #a9bbc8; font-size: 11px; }
 .footer-credit-link { display: inline-flex; align-items: center; border-radius: 3px; }
-.footer-credit-link img { display: block; width: 132px; height: auto; }
+.footer-credit-link img { display: block; width: 196px; height: auto; }
 
 :focus-visible { outline: 2px solid #7acaff; outline-offset: 4px; }
 
@@ -161,7 +163,7 @@ h1, h2 { font-family: var(--font-display); }
   .intro-grid { grid-template-columns: 110px 1fr; gap: 26px 30px; }
   .service-list { grid-column: 2; padding-top: 4px; }
   .brands-wrap { grid-template-columns: 110px 1fr; gap: 30px; }
-  .brand-list { grid-template-columns: repeat(3, 1fr); row-gap: 25px; }
+  .brand-list { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 14px; }
   .contact-grid { gap: 35px; }
 }
 
@@ -211,14 +213,18 @@ h1, h2 { font-family: var(--font-display); }
   .brands-wrap { grid-template-columns: 1fr; gap: 28px; }
   .brands-heading { display: block; }
   .brands-heading h2 { margin-bottom: 8px; font-size: 20px; }
-  .brand-list { grid-template-columns: repeat(2, 1fr); row-gap: 24px; }
+  .brand-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .brand-item { min-height: 72px; gap: 7px; padding: 10px 8px; }
+  .brand-logo { width: 62px; height: 34px; flex-basis: 62px; }
+  .brand-name { font-size: 12px; }
   .contact-grid { grid-template-columns: 1fr; gap: 34px; }
   .section-label-light { margin-bottom: 28px; }
   .contact-card { padding: 24px; }
   .footer-main { align-items: flex-start; flex-wrap: wrap; }
   .footer-main > p { order: 3; width: 100%; }
-  .footer-bottom { flex-wrap: wrap; font-size: 8px; }
-  .footer-credit-link img { width: 116px; }
+  .footer-bottom { justify-content: flex-start; flex-wrap: wrap; gap: 12px 18px; font-size: 10px; }
+  .footer-credit { flex-basis: 100%; gap: 10px; font-size: 11px; }
+  .footer-credit-link img { width: 178px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
