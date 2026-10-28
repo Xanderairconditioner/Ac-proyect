@@ -82,7 +82,7 @@ h1, h2 { font-family: var(--font-display); }
 .intro h2 span { color: #1889d5; }
 .body-copy { max-width: 465px; margin-bottom: 25px; color: #52697b; font-size: 14px; line-height: 1.85; }
 .text-link { display: inline-flex; gap: 13px; align-items: center; padding-bottom: 7px; border-bottom: 1px solid rgba(22,139,224,.45); color: #075b98; font-size: 12px; font-weight: 700; }
-.text-link span { color: var(--blue); }
+.text-link span { color: #0b70b8; }
 .service-list { padding-top: 28px; }
 .service-item { position: relative; padding: 21px 42px 24px 0; border-top: 1px solid #cad7e1; }
 .service-item:last-child { border-bottom: 1px solid #cad7e1; }
