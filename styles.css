@@ -136,6 +136,7 @@ h1, h2 { font-family: var(--font-display); }
 .contact-phone { display: inline-block; margin-bottom: 23px; color: white; font: 700 clamp(26px, 3vw, 34px)/1.2 var(--font-display); letter-spacing: -.04em; }
 .contact-phone:hover { color: #71c6ff; }
 .button-full { width: 100%; }
+.button-full .whatsapp-icon { width: 21px; height: 21px; flex: 0 0 21px; }
 .coverage { display: flex; align-items: center; gap: 12px; margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--line); color: #95aabc; font-size: 10px; line-height: 1.6; }
 .coverage strong { color: #e6f4fd; font-size: 11px; font-weight: 600; }
 .coverage-pin { color: var(--blue-bright); font-size: 24px; }
