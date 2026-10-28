@@ -37,7 +37,8 @@ button { font: inherit; }
 .site-header { position: absolute; z-index: 10; inset: 0 0 auto; height: 112px; border-bottom: 1px solid rgba(255,255,255,.12); }
 .nav-wrap { height: 100%; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; gap: 11px; min-width: 0; }
-.brand-mark { width: 160px; height: 112px; flex: 0 0 160px; object-fit: cover; object-position: center; }
+.brand-mark-picture { display: block; width: 160px; height: 112px; flex: 0 0 160px; }
+.brand-mark { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .site-nav { display: flex; align-items: center; gap: 38px; color: rgba(247,251,255,.84); font-size: 13px; font-weight: 600; }
 .site-nav > a:not(.nav-cta) { transition: color .2s ease; }
 .site-nav > a:not(.nav-cta):hover { color: var(--blue-bright); }
@@ -48,6 +49,7 @@ button { font: inherit; }
 .hero { position: relative; min-height: 730px; min-height: min(850px, 100svh); display: flex; align-items: center; overflow: hidden; background: var(--navy-deep); }
 .hero-image, .hero-shade { position: absolute; inset: 0; }
 .hero-image { left: 35%; opacity: .75; }
+.hero-image picture, .gallery-card picture { display: block; width: 100%; height: 100%; }
 .hero-image img { width: 100%; height: 100%; object-fit: cover; object-position: center 44%; filter: saturate(.8); }
 .hero-shade { background: linear-gradient(90deg, #061a31 0%, rgba(6,26,49,.97) 25%, rgba(6,26,49,.78) 49%, rgba(6,26,49,.14) 100%), linear-gradient(0deg, rgba(4,19,36,.78) 0%, transparent 32%); }
 .hero-content { position: relative; z-index: 1; padding-top: 66px; }
@@ -115,7 +117,8 @@ h1, h2 { font-family: var(--font-display); }
 .brands-heading p { margin: 0; color: #667f90; font-size: 11px; }
 .brand-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; gap: 12px; margin: 0; padding: 25px 0 0; list-style: none; }
 .brand-item { min-width: 0; min-height: 92px; display: flex; align-items: center; justify-content: center; padding: 14px; border: 1px solid #d7e3eb; border-radius: 5px; background: #fff; }
-.brand-item img { display: block; width: 170px; height: 54px; object-fit: contain; }
+.brand-item picture { display: block; width: min(170px, 100%); height: 54px; }
+.brand-item img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .brand-item[aria-label="Airmax"] img { filter: brightness(0); }
 
 .contact { position: relative; overflow: hidden; background: linear-gradient(110deg, #092443, #061a31 70%); }
@@ -165,7 +168,7 @@ h1, h2 { font-family: var(--font-display); }
 .site-footer { padding: 30px 0 0; background: #041324; }
 .footer-main { display: flex; align-items: center; justify-content: space-between; gap: 25px; padding-bottom: 26px; }
 .brand-footer { min-width: auto; }
-.brand-footer .brand-mark { width: 150px; height: 112px; flex-basis: 150px; }
+.brand-footer .brand-mark-picture { width: 150px; height: 112px; flex-basis: 150px; }
 .footer-main > p { margin: 0; color: #a0b2c1; font-size: 12px; line-height: 1.6; transform: translateY(35px); }
 .footer-socials { display: flex; align-items: center; gap: 20px; margin-left: auto; }
 .footer-socials a { display: inline-flex; align-items: center; gap: 8px; color: #b9ccda; font-size: 12px; }
@@ -192,8 +195,8 @@ h1, h2 { font-family: var(--font-display); }
   .section-pad { padding: 78px 0; }
   .site-header { height: 98px; }
   .brand { gap: 8px; min-width: 0; }
-  .brand-mark { width: 140px; height: 98px; flex-basis: 140px; }
-  .brand-footer .brand-mark { width: 136px; height: 102px; flex-basis: 136px; }
+  .brand-mark-picture { width: 140px; height: 98px; flex-basis: 140px; }
+  .brand-footer .brand-mark-picture { width: 136px; height: 102px; flex-basis: 136px; }
   .footer-main > p { font-size: 11px; transform: none; }
   .menu-toggle { width: 42px; height: 42px; display: grid; place-items: center; padding: 0; border: 1px solid rgba(255,255,255,.26); border-radius: 4px; background: transparent; color: white; }
   .menu-icon, .menu-icon::before, .menu-icon::after { width: 17px; height: 1px; display: block; background: currentColor; transition: transform .2s ease; }
@@ -234,7 +237,7 @@ h1, h2 { font-family: var(--font-display); }
   .brands-heading h2 { margin-bottom: 8px; font-size: 20px; }
   .brand-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .brand-item { min-height: 82px; padding: 10px; }
-  .brand-item img { width: 130px; height: 46px; }
+  .brand-item picture { height: 46px; }
   .contact-grid { grid-template-columns: 1fr; gap: 34px; }
   .faq-wrap { grid-template-columns: 1fr; gap: 28px; }
   .faq-list { grid-template-columns: 1fr; }
