@@ -87,9 +87,13 @@ h1, h2 { font-family: var(--font-display); }
 .body-copy { max-width: 465px; margin-bottom: 25px; color: #52697b; font-size: 14px; line-height: 1.85; }
 .text-link { display: inline-flex; gap: 13px; align-items: center; padding-bottom: 7px; border-bottom: 1px solid rgba(22,139,224,.45); color: #075b98; font-size: 12px; font-weight: 700; }
 .text-link span { color: #0b70b8; }
-.financing-callout { max-width: 360px; display: flex; align-items: center; gap: 13px; margin: 0 0 22px; padding: 14px 16px; border: 1px solid #cbd9e3; border-radius: 4px; background: #fff; color: #435b6c; font-size: 12px; line-height: 1.6; }
+.financing-callout { max-width: 390px; display: flex; align-items: center; gap: 12px; margin: 0 0 22px; padding: 14px 16px; border: 1px solid #cbd9e3; border-radius: 6px; background: #fff; color: #435b6c; font-size: 12px; line-height: 1.6; text-decoration: none; transition: border-color .2s ease, background-color .2s ease, transform .2s ease; }
+.financing-callout:hover { border-color: #1689d5; background: #fafdff; transform: translateY(-1px); }
+.financing-callout:focus-visible { outline: 3px solid #075b98; outline-offset: 3px; }
+.financing-logo { width: 96px; height: auto; max-height: 58px; flex: 0 0 96px; object-fit: contain; }
+.financing-copy { flex: 1 1 auto; }
 .financing-callout strong { color: #061a31; font-size: 14px; }
-.financing-mark { width: 34px; height: 34px; display: grid; flex: 0 0 34px; place-items: center; border-radius: 50%; background: #eaf2fb; color: #264a79; font-size: 17px; font-weight: 800; }
+.financing-arrow { flex: 0 0 auto; color: #075b98; font-size: 17px; font-weight: 700; }
 .service-list { padding-top: 28px; }
 .service-item { position: relative; padding: 21px 42px 24px 0; border-top: 1px solid #cad7e1; }
 .service-item:last-child { border-bottom: 1px solid #cad7e1; }
